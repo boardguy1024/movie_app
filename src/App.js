@@ -38,7 +38,7 @@ class App extends React.Component {
                   rating={movie.rating}
                   title={movie.title}
                   summary={movie.summary}
-                  coverImage={movie.coverImage}
+                  coverImage={movie.medium_cover_image}
                 />
               );
             })}

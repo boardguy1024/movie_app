@@ -9,6 +9,7 @@ function Movie({ id, year, rating, title, summary, coverImage }) {
       <h3>rating: {rating}</h3>
       <h3>title: {title}</h3>
       <h3>summary: {summary}</h3>
+      <img src={coverImage} alt={title}></img>
       ===========================
     </div>
   );
