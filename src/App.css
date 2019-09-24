@@ -8,7 +8,7 @@ body,
 .container {
   margin: 0 0;
   height: 100%;
-  background-color: gray;
+  background-color: #ecf0f1;
   display: flex;
   justify-content: center;
 }
@@ -36,6 +36,7 @@ body,
   align-content: flex-start;
   justify-content: space-between;
   position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .movie img {
@@ -43,8 +44,9 @@ body,
   max-width: 120px;
   max-height: 200px;
   margin-right: 30px;
-  padding-left: 20px;
-  top: -50px;
+  margin-left: 20px;
+  top: -40px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .movie .column__right {
@@ -70,5 +72,9 @@ body,
 }
 
 .movie__genres li {
+  padding-right: 10px;
+}
+
+.movie .movie__summary {
   padding-right: 10px;
 }
