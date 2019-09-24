@@ -5,24 +5,26 @@ import "./Movie.css";
 function Movie({ id, year, rating, title, summary, coverImage, genres }) {
   return (
     <div className="movie">
-      <h3 className="movie__year">year: {year}</h3>
-      <ul className="movie__genres">
-        {genres.map((genre, index) => (
-          <li key={index} className="movie__genre">
-            {genre}
-          </li>
-        ))}
-      </ul>
-      <h3 className="movie__rating">rating: {rating}</h3>
-      <h3 className="movie__title">title: {title}</h3>
-      <p className="movie__summary">summary: {summary}</p>
-      <img
-        className="movie__image"
-        src={coverImage}
-        alt={title}
-        title={title}
-      ></img>
-      ===========================
+      <div className="column__left">
+        <img
+          className="movie__image"
+          src={coverImage}
+          alt={title}
+          title={title}
+        ></img>
+      </div>
+      <div className="column__right">
+        <h3 className="movie__title">title: {title}</h3>
+        <h5 className="movie__year">year: {year}</h5>
+        <ul className="movie__genres">
+          {genres.map((genre, index) => (
+            <li key={index} className="movie__genre">
+              {genre}
+            </li>
+          ))}
+        </ul>
+        <p className="movie__summary">summary: {summary}</p>
+      </div>
     </div>
   );
 }
